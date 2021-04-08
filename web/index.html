@@ -33,6 +33,25 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  
+  <!-- Firebase Configuration -->
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyATvhZVmWRoVJmvDEA33yA-XRcbcCjrC_g",
+      authDomain: "taxiapp-810d8.firebaseapp.com",
+      databaseURL: "https://taxiapp-810d8-default-rtdb.firebaseio.com",
+      projectId: "taxiapp-810d8",
+      storageBucket: "taxiapp-810d8.appspot.com",
+      messagingSenderId: "525371663874",
+      appId: "1:525371663874:web:a3a644042e1cc50b5e691b",
+      measurementId: "G-D237B4JYQH"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
